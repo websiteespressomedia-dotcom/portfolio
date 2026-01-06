@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet-async";
 import Navbar from "../components/Navbar2";
 import PortfolioSection from "../components/PortfolioSection";
 import CinematicModal from "../components/CinematicModal";
-import { generatePortfolioItems } from "../data/portfolioData";
+import { generatePortfolioItems } from "../data/PortfolioData";
 
 const Portfolio2 = () => {
   const videoRefs = useRef({});
