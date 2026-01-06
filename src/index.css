@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+/* Times New Roman MT Std Condensed — Normal */
+@font-face {
+  font-family: "Times New Roman MT Std";
+  src: url("./assets/fonts/TimesNewRomanMTStdCondensed.ttf") format("truetype");
+  font-weight: lighter;
+  font-style: light;
+}
+
+/* Times New Roman MT Std Condensed — Italic */
+@font-face {
+  font-family: "Times New Roman MT Std";
+  src: url("./assets/fonts/TimesNewRomanMTStdCondensedItalic.otf") format("opentype");
+  font-weight: lighter;
+  font-style: italic;
+}
+
+/* Utility class to apply the condensed Times font specifically */
+.font-times-cond {
+  font-family: "Times New Roman MT Std", "Times New Roman";
+}
+
+
+/* Global background color */
+html, body, #root, .app-root {
+  background-color: #4A2D1D;
+}
+
+@keyframes gradient-x {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient-x {
+  background-size: 200% 200%;
+  animation: gradient-x 6s ease infinite;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slideDown {
+  animation: slideDown 0.25s ease-out;
+}
